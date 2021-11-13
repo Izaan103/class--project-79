@@ -1,0 +1,79 @@
+<div class="container" >
+    <div id="menuthumbs" class="row">
+        <div class="col-xs-6 col-md-4">
+            <a class="thumbnail" id="pizzas" >
+                <img alt="Pizzas" src="http://gastrolust.com/wp-content/uploads/2012/01/nypizza_roni_600_3769.JPG">
+                  <div class="caption">
+         <h3>Pizza / Calzone</h3>
+      </div>
+            </a>
+        </div>
+        <div  class="col-xs-6 col-md-4">
+            <a class="thumbnail" id="sandwiches" >
+                <img alt="Sandwiches" src="http://cdn.foodbeast.com/content/uploads/2014/07/INO-McGangBang-Burger.jpg">
+                       <div class="caption">
+         <h3>Sandwiches</h3>
+      </div>
+              
+            </a>
+        </div>
+        <div  class="col-xs-6 col-md-4">
+            <a class="thumbnail" id="salads">
+                <img alt="Salads" src="https://www.orwhateveryoudo.com/wp-content/uploads/2015/06/Loaded-Nachos-Supreme-6-600x400.jpg">
+                       <div class="caption">
+         <h3>Salads</h3>
+      </div>
+            </a>
+        </div>
+        
+    </div>
+    
+    <div id="menuthumbs" class="row">
+        
+        <div class="col-xs-6 col-md-4">
+            <a class="thumbnail" id="pies">
+                <img alt="Specialty Pies" src="https://www.bebeautiful.in/sites/default/files/juices-you-should-drink-after-exercise-600x400.jpg">
+                       <div class="caption">
+         <h3>Specilty Pies</h3>
+      </div>
+            </a>
+        </div>
+        
+        <div class="col-xs-6 col-md-4">
+            <a class="thumbnail" id="pasta">
+                <img alt="Pasta" src="http://gastrolust.com/wp-content/uploads/2012/01/nypizza_roni_600_3769.JPG">
+                  <div class="caption">
+                      <h3>Pasta</h3>
+      </div>
+            </a>
+        </div>
+        
+        <div class="col-xs-6 col-md-4">
+            <a class="thumbnail" id="bread">
+                <img alt="Bread" src="https://www.orwhateveryoudo.com/wp-content/uploads/2015/06/Loaded-Nachos-Supreme-6-600x400.jpg">
+                       <div class="caption">
+         <h3>Bread</h3>
+      </div>
+            </a>
+        </div>
+        
+    </div>
+</div>
+
+
+<script> 
+    $(document).ready(function(){
+        $("#pizzas").on('click', function(){
+            $("#viewdiv").load("/public/menuPizzas.html");
+        });
+        $("#bread").on('click', function(){
+            $("#viewdiv").load("/public/ordenar.html");
+        });
+        $("#pasta").on('click', function(){
+            $("#viewdiv").load("/public/ordenar.html");
+        });
+        $("#salads").on('click', function(){
+            $("#viewdiv").load("/public/salads.html");
+        });
+    });   
+</script>    
